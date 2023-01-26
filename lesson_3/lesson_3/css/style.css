@@ -1,0 +1,50 @@
+@import url(reset.css);
+
+h1 {
+	color: red;
+}
+[class*="tittle"] {
+	color: pink;
+}
+.navlist > ol {
+	color: blue;
+}
+.text {
+	color: yellow;
+}
+.text + p {
+	color: yellowgreen;
+}
+
+.secondblock {
+	color: blueviolet;
+}
+.secondblock > h3 {
+	color: rgb(57, 33, 78);
+}
+
+.thirdblock {
+	color: rgb(60, 1, 60);
+}
+.thirdblock .thirdtext {
+	color: rgb(240, 59, 240);
+}
+
+.fourthblock > p {
+	color: rgb(150, 78, 27);
+}
+.fourthblock > h3 {
+	color: rgb(247, 140, 63);
+}
+
+.battletext,
+.battlexp {
+	color: tomato;
+}
+
+.footertext {
+	color: greenyellow;
+}
+.footertext ~ p {
+	color: red;
+}
