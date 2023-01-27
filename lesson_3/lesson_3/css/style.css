@@ -48,3 +48,7 @@ h1 {
 .footertext ~ p {
 	color: red;
 }
+
+#battle {
+	color: red;
+}
