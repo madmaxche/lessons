@@ -1,0 +1,93 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
+
+@font-face {
+	font-family: 'Constantia';
+	src: url('Constantia.woff2') format('woff2'),
+		url('Constantia.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Constantia';
+	src: url('Constantia-Bold.woff2') format('woff2'),
+		url('Constantia-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+*{
+	word-spacing: 5.5px;
+}
+
+[class*="title"]{
+	font-size: 25px;
+	text-decoration: underline;
+	text-align: center;
+	color: rgb(53, 53, 53);
+	font-family: "Sofia Sans Extra Condensed";
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.mainblock__bio {
+	font-family: "Sofia Sans Extra Condensed", serif;
+	font-size: 21px;
+	line-height: 1.2;
+	text-indent: 20px;
+}
+.mainblock__bio > p{
+	font-weight: 300;
+	
+}
+.bio__text ~ p{
+	font-weight: 500;
+	text-shadow: 5px 5px 10px rgba(255, 3, 3, 0.457);
+}
+.mainblock__films {
+	font-family: 'Caveat', cursive;
+	text-indent: 20px;
+}
+.mainblock__films > a{
+	text-decoration: underline;
+}
+.mainblock__films > ul{
+	text-align: right;
+}
+#filmstext{
+	font-weight: 400;
+	text-shadow: 2px 2px 4px rgb(104, 84, 84), 2px 2px 4px rgb(52, 50, 50);
+}
+.scenariotext{
+	font-weight: 500;
+}
+.scenariotext>span{
+	font-weight: 700;
+}
+.mainblock__memory {
+	font-family: "Constantia" ,sans-serif;
+	font-weight: bold;
+	text-indent: 20px;
+	color: rgba(0, 0, 0, 0.468);
+	text-align: left;
+}
+
+footer{
+	font-family: "Constantia" ,sans-serif;
+	font-weight: normal; 	/*За замовчуванням*/
+	font-size: 21px;
+	line-height: 1.6;
+	text-shadow: 2px 2px 15px rgb(125, 66, 66);
+	white-space: nowrap;
+}
+
+.footerblock__text{
+	text-transform: lowercase;
+}
+
+
