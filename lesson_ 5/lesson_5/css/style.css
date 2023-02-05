@@ -9,7 +9,7 @@ body {
 	margin: 0px auto;
 }
 main {
-	padding: 115px 0px 182px 0px;
+	padding: 100px 0px 100px 0px;
 }
 h2 {
 	font-size: 25px;
@@ -20,7 +20,7 @@ h2 {
 p {
 	font-size: 14px;
 	font-weight: 300;
-	padding-bottom: 37px;
+	margin-bottom: 37px;
 	color: #6c757d;
 	line-height: 25px;
 }
@@ -29,29 +29,38 @@ p {
 	margin: 0px auto;
 }
 .firstblock__content {
-	margin-bottom: 43px;
+	margin-bottom: 80px;
 }
 .firstblock__title {
 	max-width: 405px;
 	margin: 0px 0px 40px 0px;
 }
+.imagesandblock{
+	margin-bottom: 80px;
+}
 .imagesand {
-	margin: 0px 0px 80px 0px;
+	display: block;
+	max-width: 1240px;
+	margin: 0px auto;
 }
 .secondblock__content {
-	margin-bottom: 43px;
+	margin-bottom: 80px;
 }
 .secondblock__title {
 	max-width: 605px;
 	margin: 0px 0px 40px 0px;
 }
 .imageblock {
-	padding-bottom: 80px;
 	max-width: 1240px;
 	margin: 0px auto;
+	font-size: 0;
 }
 .imageblock img {
-	width: 605px;
-	padding: 0px 30px 0px 0px;
+	font-size: 16px;
+	max-width: 599px;
 	margin: 0px auto;
+}
+
+#boat{
+	margin: 0px 30px 80px 0px;
 }
