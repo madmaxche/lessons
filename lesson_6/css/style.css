@@ -15,6 +15,9 @@ h1{
 h2{
 	max-width: 605px;
 }
+img{
+border-radius: 5px;
+}
 [class*="__container"]{
 	max-width: 1270px;
 	margin: 0px auto;
@@ -74,9 +77,7 @@ h2{
 	margin-bottom: 60px;
 	color: #6C757D;
 }
-.secondblock__image-block img{
-	border-radius: 5px;
-}
+
 
 
 
