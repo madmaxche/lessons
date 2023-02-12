@@ -12,6 +12,7 @@ body{
 
 
 .headerblock {
+	min-height: 100vh;
 	height: 600px;
 	background: url('../img/headerback.png') 0 0 / cover no-repeat;
 	border: 1px solid #000000;
