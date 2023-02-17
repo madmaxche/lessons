@@ -1,0 +1,197 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
+
+body{
+	font-family: "Inter", sans-serif;
+}
+
+.headerblock {
+	font-family: "Poppins";
+	background: url('../img/headerback.png') center/cover no-repeat, #212529;
+	border: 1px solid #000000;
+	border-radius: 0px 5px 5px 0px;
+}
+.headerblock__container {
+	padding: 330px 15px 100px 15px;
+	max-width: 1270px;
+	margin: 0px auto;
+}
+.headerblock__text-block {
+	max-width: 605px;
+	line-height: 1.6;
+}
+.headerblock__text-block *:last-child{
+	margin-bottom: 15px;
+}
+.headerblock__text-block p:first-of-type{
+	margin-bottom: 15px;
+}
+.headerblock__info {
+	font-weight: 300;
+	font-size: 12px;
+	color: #E5E5E5;
+}
+.headerblock__title {
+	font-weight: 700;
+	font-size: 25px;
+	color: #F8F9FA;
+	margin-bottom: 15px;
+}
+.headerblock__title:hover{
+	color: #9a9898;
+	text-decoration: underline;
+}
+
+.mainblock {
+	background: #E6E6E6;
+}
+.mainblock__container {
+	padding: 150px 15px;
+	max-width: 1175px;
+	margin: 0px auto;
+}
+.mainblock__text-block *:last-child{
+	margin-bottom: 25px;
+}
+.mainblock__title {
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.07;
+	color: #212B36;
+	margin-bottom: 45px;
+}
+.mainblock__title::after{
+	content: ":";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: #212B36;
+}
+.mainblock__list {
+	margin-bottom: 68px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 0.9;
+	color: #637381;
+}
+.mainblock__list li{
+	margin-bottom: 18px;
+}
+.mainblock__list li:active{
+	color: #87b3d9;
+}
+.mainblock__list li:hover{
+	font-size: 21px;
+}
+.mainblock__list li:hover::before{
+	display: none;
+}
+.mainblock__list:first-child {
+	margin-bottom: 60px;
+}
+.mainblock__list li::before{
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-bottom: -4px;
+}
+.mainblock__list:nth-child(1) li::before{
+	content: "";
+	background: url("../img/icon-list/ellipse.png") no-repeat;
+	width: 8px;
+	height: 8px;
+	margin-bottom: 1px;
+}
+.mainblock__list:nth-child(2) li::before{
+	content: "";
+	background: url("../img/icon-list/cross-circle.png")  no-repeat;
+}
+.mainblock__list:nth-child(3) li::before{
+	content: "";
+	background: url("../img/icon-list/checkmark-blue.png") no-repeat;
+}
+.mainblock__list:nth-child(4) li::before{
+	content: "";
+	background: url("../img/icon-list/arrow-right.png")  no-repeat;
+}
+.mainblock__list:nth-child(5) li::before{
+	content: "";
+	background: url("../img/icon-list/checkmark-green.png")no-repeat;
+}
+.mainblock__list:nth-child(6) li::before{
+	content: "";
+	background: url("../img/icon-list/star.png")  no-repeat;
+}
+
+
+
+.footerblock {
+	background: #F4F7FF;
+	background: linear-gradient(120deg, rgba(226,231,244,0.891281512605042) 64%, rgba(201,213,247,1) 64%, rgba(215,223,247,1) 70%, rgba(169,188,240,1) 70%);
+}
+.footerblock__container {
+	padding: 145px 15px 146px 15px;
+	max-width: 1050px;
+	margin: 0px auto;
+	background: url('../img/speaker.png') right 81px no-repeat;
+}
+.footerblock__text-block {
+	max-width: 570px;
+	margin-bottom: 35px;
+}
+.footerblock__price {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.33;
+	color: #3056D3;
+	margin-bottom: 13px;
+}
+.footerblock__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25;
+	color: #212B36;
+	margin-bottom: 15px;
+}
+.footerblock__info {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #637381;
+	margin-bottom: 15px;
+}
+.footerblock__text-block *:last-child {
+	margin-bottom: 15px;
+}
+.footerblock__link {
+	display: inline-block;
+	min-width: 139px;
+	min-height: 44px;
+	background: #3056D3;
+	border-radius: 30px;
+}
+.footerblock__link:hover{
+	background: #193591;
+}
+.footerblock__link:active{
+	background: #193591;
+	box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+}
+.footerblock__link:focus {
+	background: rgba(153, 255, 0, 0.568);
+	outline: 3px solid #193591;
+}
+.footerblock__link span{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #FFFFFF;
+}
