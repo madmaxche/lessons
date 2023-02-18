@@ -58,7 +58,7 @@ body{
 }
 .mainblock__title::after{
 	content: ":";
-	color: #E5E5E5;
+	color: #e4d1d1;
 	margin-left: 15px;
 }
 .mainblock__list {
@@ -169,10 +169,10 @@ background: linear-gradient(120deg, rgba(226,231,244,0.891281512605042) 64%, rgb
 }
 .footerblock__link:active{
 	border-radius: 10px;
-	box-shadow: 0px 0px 15px rgb(255, 0, 0);
+	box-shadow: 0px 0px 25px rgb(140, 168, 245);
 }
 .footerblock__link:focus{
-	background: yellowgreen;
+	background: #193db1;
 }
 .footerblock__link span{
 	display: inline-block;
