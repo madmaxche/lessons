@@ -1,0 +1,171 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
+
+body{
+	font-family: "Inter",sans-serif;
+}
+
+.headerblock {
+	font-family: "Poppins";
+	background: url('../img/headerback.png') center/cover no-repeat, #212529;
+	border: 1px solid #000000;
+	border-radius: 0px 5px 5px 0px;
+}
+.headerblock__container {
+	max-width: 1270px;
+	margin:0px auto;
+	padding: 330px 15px 100px;
+}
+.headerblock__text-block {
+	max-width: 605px;
+	line-height: 1.6;
+}
+.headerblock__info {
+	font-weight: 300;
+	font-size: 12px;
+	color: #E5E5E5;
+	margin-bottom: 15px;
+}
+.headerblock__title {
+	font-weight: 700;
+	font-size: 25px;
+	color: #F8F9FA;
+	margin-bottom: 15px;
+}
+
+
+.mainblock {
+	background: #E6E6E6;
+}
+.mainblock__container {
+	min-width: 1175px;
+	margin: 0px auto;
+	padding: 150px 15px;
+}
+.mainblock__list-block {
+	line-height: 1;
+}
+.mainblock__list-block ul:last-of-type{
+	margin-bottom: 0px;
+}
+.mainblock__list-block ul:first-child{
+	margin-bottom: 60px;
+}
+.mainblock__title {
+	font-weight: 400;
+	font-size: 26px;
+	color: #212B36;
+	margin-bottom: 45px;
+}
+.mainblock__list {
+	font-weight: 700;
+	font-size: 16px;
+	color: #637381;
+	margin-bottom: 68px;
+}
+.mainblock__list li{
+	margin-bottom: 18px;
+	min-height: 20px;
+}
+.mainblock__list li:last-of-type{
+	margin-bottom: 0px;
+}
+.mainblock__list li::before{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px -4px 0px;
+}
+.mainblock__list:nth-child(1) li::before{
+	content: "";
+	display: inline-block;
+	background: url('../img/icon-list/ellipse.png')no-repeat;
+	width: 8px;
+	height: 8px;
+	margin: 0px 10px 0px 0px;
+}
+.mainblock__list:nth-child(2) li::before{
+	content: "";
+	background: url('../img/icon-list/cross-circle.png')no-repeat;
+}
+.mainblock__list:nth-child(3) li::before{
+	content: "";
+	background: url('../img/icon-list/checkmark-circle-green.png')no-repeat;
+}
+.mainblock__list:nth-child(4) li::before{
+	content: "";
+	background: url('../img/icon-list/arrow-right.png')no-repeat;
+}
+.mainblock__list:nth-child(5) li::before{
+	content: "";
+	background: url('../img/icon-list/checkmark-circle-blue.png')no-repeat;
+}
+.mainblock__list:nth-child(6) li::before{
+	content: "";
+	background: url('../img/icon-list/star.png')no-repeat;
+}
+
+
+.footerblock {
+	background: rgb(226,231,244);
+	background: linear-gradient(120deg, rgba(226,231,244,0.891281512605042) 64%, rgba(201,213,247,1) 64%, rgba(215,223,247,1) 70%, rgba(169,188,240,1) 70%);
+}
+.footerblock__container {
+	max-width: 1050px;
+	margin: 0px auto;
+	padding: 145px 15px;
+	background: url('../img/speaker.png') right 81px no-repeat;
+}
+.footerblock__text-block {
+	max-width: 570px;
+	margin-bottom: 35px;
+}
+.footerblock__price {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #3056D3;
+	margin-bottom: 13px;
+}
+.footerblock__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 45px;
+	color: #212B36;
+	margin-bottom: 15px;
+}
+.footerblock__info {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #637381;
+	
+}
+.footerblock__button-link {
+}
+.footerblock__link {
+display: inline-block;
+min-width: 139px;
+min-height: 44px;
+background: #3056D3;
+border-radius: 30px;
+}
+.footerblock__link:hover{
+	background: #1e388d;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+.footerblock__link:active{
+	background: #003cff;
+	border-radius: 40px;
+}
+.footerblock__link span{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
