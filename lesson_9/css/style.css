@@ -1,0 +1,74 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+body{
+	background: #3056D3;
+	font-family: "Inter";
+}
+img{
+	max-width: 100%;
+}
+h2{
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 35px;
+	color: #e6e6e6;
+}
+.headerblock {
+}
+.headerblock__container {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 150px 15px;
+}
+.headerblock__text-block {
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 35px;
+	color: #e6e6e6;
+}
+.headerblock__title {
+}
+.headerblock__subtitle {
+}
+.headerblock__icons {
+	font-size: 0px;
+	margin-bottom: 15px;
+}
+.headerblock__icons img{
+	margin-left: 15px;
+}
+
+
+.mainblock {
+	background: #1234A6;
+}
+.mainblock__container {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 150px 15px;
+	background:url('../img/icons/design-element_3.svg') center no-repeat,url('../img/icons/design-element_10.svg') top right no-repeat,url('../img/icons/design-element_11.svg') bottom left no-repeat,url('../img/icons/design-element_12.svg') bottom left no-repeat,url('../img/icons/design-element_15.svg') bottom right no-repeat,
+	url('../img/icons/design-element_16.svg') center no-repeat,
+	url('../img/icons/design-element_23svg.svg') no-repeat;
+}
+.mainblock__text-block {
+	font-weight: 500;
+	font-size: 26px;
+	color: #e6e6e6;
+}
+.mainblock__title {
+}
+.mainblock__design-elements {
+}
+
+
+.footerblock {
+}
+.footerblock__container {
+}
+.footerblock__text-block {
+}
+.footerblock__title {
+}
