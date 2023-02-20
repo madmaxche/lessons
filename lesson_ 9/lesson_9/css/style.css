@@ -1,2 +1,34 @@
 @import url(reset.css);
 
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+body{
+	background: #3056D3;
+	font-family: "Inter";
+}
+img{
+	max-width: 100%;
+}
+
+.headerblock {
+}
+.headerblock__container {
+	background: #233e98;
+	max-width: 1100px;
+	margin: 0px auto;
+}
+.headerblock__text-block {
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.headerblock__title {
+}
+.headerblock__subtitle {
+}
+.headerblock__icons {
+	font-size: 0px;
+}
+.headerblock__icons img{
+	margin-left: 15px;
+}
