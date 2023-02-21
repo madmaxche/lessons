@@ -1,0 +1,143 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:500,700&display=swap);
+body{
+	background: #3056D3;
+	font-family: "Inter";
+}
+img{
+	max-width: 100%;
+}
+h1,h2{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 35px;
+	color: #e6e6e6;
+}
+.headerblock__container {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 150px 15px;
+}
+.headerblock__text-block {
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 35px;
+	color: #e6e6e6;
+}
+.headerblock__title {
+}
+.headerblock__subtitle {
+}
+.headerblock__icons {
+	font-size: 0px;
+	margin-bottom: 15px;
+}
+.headerblock__icons img{
+	margin-left: 15px;
+}
+
+
+.mainblock {
+	background: #1234A6;
+}
+.mainblock__container {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 150px 15px;
+	background:url('../img/icons/design-element_3.svg') center no-repeat,url('../img/icons/design-element_10.svg') top right no-repeat,url('../img/icons/design-element_11.svg') bottom left no-repeat,url('../img/icons/design-element_12.svg') bottom left no-repeat,url('../img/icons/design-element_15.svg') bottom right no-repeat,
+	url('../img/icons/design-element_16.svg') center no-repeat,
+	url('../img/icons/design-element_23svg.svg') no-repeat;
+}
+.mainblock__text-block {
+	font-weight: 500;
+	font-size: 26px;
+	color: #e6e6e6;
+}
+
+.footerblock {
+	background: #e6e6e6;
+}
+.footerblock__container {
+	max-width: 1270px;
+	margin: 0px auto;
+	padding: 150px 15px;
+}
+.footerblock__text-block {
+	font-weight: 500;
+	font-size: 26px;
+	color: #3056D3;
+	margin-bottom: 50px;
+}
+.footerblock__title {
+	color: #3056D3;
+}
+.footerblock__image-block {
+	font-size: 0;
+}
+.footerblock__image-block img:first-child{
+	margin-bottom: 25px;
+}
+.footerblock__image-block div {
+	margin-bottom: 25px;
+}
+.footerblock__image-block div:last-of-type{
+	margin-bottom: 0px;
+}
+
+
+.footerblock__image-mig {
+	max-width: 600px;
+	margin: 0px auto;
+}
+.footerblock__image-mig img{
+	margin-right: 30px;
+}
+.footerblock__image-mig img:last-of-type{
+	margin-right: 0px;
+}
+
+
+.footerblock__image-persons {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+.footerblock__image-persons img{
+	margin-right: 30px;
+}
+.footerblock__image-persons img:last-of-type{
+	margin-right: 0px;
+}
+
+.footerblock__image-group {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+.footerblock__image-group img{
+	margin: 0px 30px 50px 0px;
+}
+.footerblock__image-group img:last-of-type{
+	margin: 0px 0px 0px 0px;
+}
+
+
+.footerblock__image-ellipse{
+	max-width: 200px;
+	margin: 0px auto;
+
+}
+
+
+.footerblock__image-blog {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+.footerblock__image-blog img{
+	margin-right: 30px;
+}
+.footerblock__image-blog img:last-of-type{
+	margin-right: 0px;
+}
