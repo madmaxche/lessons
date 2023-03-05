@@ -1,0 +1,13 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600&display=swap);
+
+body{
+	font-family: "Inter";
+	font-weight: 500;
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
