@@ -1,0 +1,262 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap);
+
+
+body{
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	background: #8b7474;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	position: relative;
+}
+.header__container {
+	max-width: 1300px;
+	margin: 0px auto;
+	padding: 30px 15px;
+}
+.header__title {
+	font-weight: 700;
+	font-size: 26px;
+	color: #e9d0d0;
+}
+[class*="-block"]{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 50px;
+	background: rgba(236, 8, 8, 0.244);
+}
+[class*="__text"]{
+	font-size: 20px;
+	font-weight: 600;
+	padding: 50px;
+}
+
+.header__transform {
+	display: inline-block;
+	position: relative;
+	top: 100%;
+	left: 10%;
+}
+.header__translate-block:active {
+	transform: translate(-140px,-120px);
+}
+.header__scale-block:hover{
+	transform: scale(2);
+}
+.header__rotate-block {
+	transform: rotate(180deg);
+}
+.header__rotate-block:hover {
+	transform: rotate(30deg);
+}
+.header__skew-block {
+	transform: skew(0deg,0deg);
+}
+.header__skew-block:hover{
+	transform: skew(10deg,10deg);
+}
+.header__matrix-block:hover{
+	transform: matrix(2, 1, 0, 1, 20, 20);
+}
+
+
+.header__multi-transform{
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 30%;
+}
+.header__transform-origin-block {
+	transform-origin: center left;
+}
+.header__transform-origin-block:active{
+	transform: rotate(-90deg);
+}
+.header__perspective-block {
+	perspective-origin: bottom;
+	perspective: 500px;
+}
+.header__perspective{
+	width: 200px;
+	height: 200px;
+	background: rgba(77, 76, 76, 0.399);
+}
+.header__perspective:hover{
+	transform: rotateX(45deg);
+}
+.header__translate-d-block {
+	transform: translate3D(0px, 0px, 0px);
+	perspective-origin: center;
+	perspective: 400px;
+}
+.header__translate-d-block:hover {
+	transform: perspective(500px) translate3d(10px, 0, 100px);
+	background-color: pink;
+}
+.header__scale-d-block {
+	transform: scale3d(1, 1, 1);
+}
+.header__scale-d-block:hover {
+	transform: scale3d(2, 2, 2);
+}
+.header__rotate-d-block {
+	transform: rotate3d(1, 1, 1, 45deg);
+}
+.header__rotate-d-block:hover {
+	transform: rotate3d(1, 1, 1, 0deg);
+}
+.header__matrix-d-block:hover {
+	transform: scale(2) translate(20px,30px) rotate(60deg);
+}
+
+
+.header__multid-transform {
+	display: inline-block;
+	position: relative;
+	top: 100%;
+	left: 50%;
+}
+.header__translate-rotate-d-block:hover{
+	transform: rotate3d(1, 1, 1, 45deg);
+}
+.header__transform-wrapper {
+	background: rgba(77, 76, 76, 0.399);
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+.header__transform-style-block {
+	transform: rotateX(0deg);
+}
+.header__transform-style-block:hover {
+	transform: rotateX(50deg);
+}
+
+.header__flip {
+	perspective: 500px;
+	transform-style: preserve-3d;
+}
+.header__backface-body {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.header__flip-front,
+.header__flip-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.header__flip-front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background: #f40a0a;
+
+	backface-visibility: hidden;
+}
+.header__flip-back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+.header__flip:hover .header__backface-body {
+	transform: rotateY(-180deg);
+}
+
+
+.main {
+	min-height: 100%;
+}
+.main__container {
+	max-width: 1200px;
+}
+.main__auto {
+	position: relative;
+	left: 25%;
+	top: 25%;
+	padding-bottom: 100px;
+}
+[class*="__wheels"]{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background: #000;
+	padding: 20px;
+	border: 5px dotted #ffffff;
+}
+[class*="__wheels"]:hover{
+	transform: rotate(90deg);
+}
+.main__wheels-left {
+	position: relative;
+	top: 195px;
+	left: 100px;
+}
+.main__wheels-right {
+	position: relative;
+	top: 120px;
+	left: 350px;
+
+}
+.main__wheel{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+.main__auto-body {
+	width: 500px;
+	height: 100px;
+	background: #ea2323;
+}
+.main__auto-roof {
+	width: 250px;
+	height: 150px;
+	background: #f54545;
+	transform: translate(125px,-250px);
+}
+.main__auto-headlight-left {
+	width: 20px;
+	height: 15px;
+	background: #c7e62e;
+	transform: translate(10px,-220px);
+}
+.main__auto-headlight-right {
+	width: 20px;
+	height: 25px;
+	background: #c7e62e;
+	transform: translate(480px,-220px);
+}
+.main__auto-light {
+	visibility: hidden;
+	position: relative;
+	left:40px;
+	top: 10px;
+	height: 45px;
+	width: 65px;
+	background: rgba(199, 230, 46, 0.537);
+	transform: skew(65deg,0deg);
+}
+.main__auto-headlight-right:hover .main__auto-light {
+	visibility: visible;
+}
+.main__auto-salon {
+	background: #fff;
+	width: 230px;
+	height: 130px;
+	transform: translate(135px,-420px);
+}
+.main__auto-salon:hover{
+	background: url('../img/158076-1_large.webp') 0 0 / contain  no-repeat;
+	transform: translate(135px,-420px) scale(2);
+}
