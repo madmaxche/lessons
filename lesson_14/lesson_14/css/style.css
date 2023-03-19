@@ -1,0 +1,83 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+body{
+	font-family: "Poppins",sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	background: #E5E5E5;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+img{
+	max-width: 100%;
+}
+
+.header {
+	font-weight: 500;
+	line-height: 2.08;
+	color: #495057;
+	transition: all 0.3s ease 0s;
+	margin-bottom: 44px;
+}
+.header__container {
+}
+.header__row {
+	display: flex;
+	justify-content: space-between;
+}
+.header__title {
+}
+.header__choice {
+	display: flex;
+	gap: 20px;
+	color: rgba(73, 80, 87, 0.5);
+}
+.header__columns:hover {
+	color: #495057;
+}
+.main {
+	
+}
+.main__container {
+}
+.main__row {
+	display: flex;
+	row-gap: 45px;
+	column-gap: 30px;
+	row-gap: 45px;
+	flex-wrap: wrap;
+}
+.main__column {
+	flex: 0 0 393px;
+}
+.card__image {
+}
+.card__watermark {
+}
+.card__category {
+}
+.card__date {
+}
+.card__title {
+}
+.card__text {
+}
+.card__author {
+}
+.footer {
+}
+.footer__container {
+}
+.footer__button {
+}
+.footer__link {
+}
