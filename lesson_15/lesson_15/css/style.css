@@ -48,6 +48,7 @@ img{
 	column-gap: 120px;
 	flex-wrap:wrap;
 	row-gap: 40px;
+	flex: 0 1 60%;
 }
 .header__text{
 	display: flex;
@@ -131,6 +132,7 @@ img{
 }
 .card__row {
 	display: flex;
+	flex: 1 1 auto;
 	flex-wrap: wrap;
 	gap: 32px;
 }
