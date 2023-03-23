@@ -37,7 +37,7 @@
 .header__row {
 	display: flex;
 	column-gap: 28px;
-	transition: all 0.7	s ease 0s;
+	transition: all 0.7s ease 0s;
 }
 .input__text{
 	width: 100%;
@@ -232,78 +232,68 @@ span{
 .address{
 	visibility: hidden;
 }
-.radio{
-	display: flex;
-	flex-direction: column;
-	gap: 0px;
-	flex-wrap: nowrap;
-}
-.main__radio {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-	opacity: 0;
+
+.main__radio:not(:last-child) {
+	margin-bottom: 24px;
 }
 
-.main__text-radio{
+.form-title-style:not(:last-child) {
+   margin-bottom: 35px;
+}
+.main__radioblock {
+	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 1.43;
 	color: #3F3F3F;
-}
-.main__text-radio:checked{
-	color: #000000;
-}
-.main__text-cost::before{
-	content: "";
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: #FFFFFF;
-	border: 1px solid #000000;
-	border-radius: 50%;
-	margin-bottom: 2px;
-	margin-right: 13px;
-}
-.main__radio:checked+ .main__text-cost::before{
-	content: "";
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: #FFFFFF;
-	border-radius: 50%;
-	border: 3px solid #000000;
-	margin-bottom: 2px;
-	margin-right: 13px;
-}
-.main__radio-column{
-	position: relative;
-}
-.main__radio-row{
-	position: relative;
-	max-width: 380px;
-	min-height: 44px;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+}
+.radio__column {
+	display: flex;
+}
+.radio__row{
+	display: flex;
+	position: relative;
+	padding: 12px;
 	justify-content: space-between;
+	gap: 10px;
+	flex: 0 1 450px;
 }
-.main__radio-row::after{
-	content: "";
-	position: absolute;
-	top: 2%;
-	width: 606px;
-	height: 1px;
-	border: 1px solid #C4C4C4;
+.radio__row:nth-child(1){
+	border-top: 1px solid #C4C4C4;
 }
-.main__radio-row:last-child:after{
-	content: "";
+.radio__row input {
 	position: absolute;
-	top: 2%;
-	width: 443px;
-	height: 1px;
-	border: 1px solid #C4C4C4;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+}
+.main__radio label {
+	cursor: pointer;
+	padding-left: 10px;
+}
+.radio__row label::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 15.7px;
+	left: 5px;
+	background: #FFFFFF;
+	border: 1px solid #828282;
+	border-radius: 50%;
+}
+.main__radio input:checked+ label::before{
+	border: 3px solid #000000;
+}
+.radio__rate {
+	display: flex;
+	position: relative;
+	flex: 0 1 190px;
+	gap: 20px;
+	justify-content: space-between;
+	margin-right: 50px;
 }
 .main__row-button {
 	display: flex;

@@ -40,8 +40,8 @@
 						</div>
 						<div class="header__row">
 							<div class="header__select-form input">
-								<select title="Country*" name="country" required class="input__text">
-									<option value="0" default disabled hidden selected>Country*</option>
+								<select title="Country*" name="country" class="input__text">
+									<option value="0" disabled hidden selected>Country*</option>
 									<option value="1">Poland</option>
 									<option value="2">Ukraine</option>
 									<option value="3">USA</option>
@@ -156,8 +156,8 @@
 					</div>
 					<div class="main__input-form ">
 						<label for="state-01" class="main__text">State/Province <span>*</span></label>
-						<select title="State*" name="state" id="state-01" required class="main__input">
-							<option value="0" default disabled hidden selected>Please select a region, state or province
+						<select title="State*" name="state" id="state-01" class="main__input">
+							<option value="0" disabled hidden selected>Please select a region, state or province
 							</option>
 							<option value="1">Poland</option>
 							<option value="2">Ukraine</option>
@@ -165,22 +165,28 @@
 							<option value="4">Germany</option>
 						</select>
 					</div>
-					<h2 class="main__title">
-						Shipping Address
-					</h2>
-					<div class="main__input-form radio">
-						<div class="main__radio-column">
-							<input type="radio" name="shipping" id="shipping-01" class="main__radio">
-							<div class="main__radio-row">
-								<label for="shipping-01" class="main__text-cost">$5.00</label>
-								<label for="shipping-01" class="main__text-radio">Fixed</label>
-								<label for="shipping-01" class="main__text-radio">Flat Rate</label>
+					<div class="main__radio">
+						<div class="main__title">Shipping Methods</div>
+						<div class="main__radioblock radio">
+							<div class="radio__column">
+								<div class="radio__row">
+									<input id="radio-01" type="radio" name="radio" value="type">
+									<label for="radio-01">$5.00</label>
+									<div class="radio__rate">
+										<div class="radio__text">Fixed</div>
+										<div class="radio__text">Flat Rate</div>
+									</div>
+								</div>
 							</div>
-							<input type="radio" name="shipping" id="shipping-02" class="main__radio">
-							<div class="main__radio-row">
-								<label for="shipping-02" class="main__text-cost">$10.00</label>
-								<label for="shipping-02" class="main__text-radio">Table Rate</label>
-								<label for="shipping-02" class="main__text-radio">Best Way</label>
+							<div class="radio__column">
+								<div class="radio__row">
+									<input id="radio-02" type="radio" name="radio" value="type">
+									<label for="radio-02">$10.00</label>
+									<div class="radio__rate">
+										<div class="radio__text">Table Rate</div>
+										<div class="radio__text">Best Way</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
