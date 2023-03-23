@@ -160,15 +160,6 @@
 span{
 	color: red;
 }
-.main__title {
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 68px;
-	display: flex;
-	align-items: center;
-	color: #000000;
-	margin-bottom: 34px;
-}
 .main__form {
 	position: relative;
 	display: flex;
@@ -237,9 +228,6 @@ span{
 	margin-bottom: 24px;
 }
 
-.form-title-style:not(:last-child) {
-   margin-bottom: 35px;
-}
 .main__radioblock {
 	font-family: 'Roboto';
 	font-weight: 400;
