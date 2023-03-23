@@ -237,9 +237,6 @@ span{
 	margin-bottom: 24px;
 }
 
-.form-title-style:not(:last-child) {
-   margin-bottom: 35px;
-}
 .main__radioblock {
 	font-family: 'Roboto';
 	font-weight: 400;
