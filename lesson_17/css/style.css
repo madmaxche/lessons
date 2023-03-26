@@ -5,6 +5,9 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
 
+body{
+	background: #D9D9D9;
+}
 img{
 	max-width: 100%;
 }
