@@ -12,7 +12,7 @@ body{
 	padding: 0px 15px;
 }
 img{
-	min-width: 100%;
+	max-width: 100%;
 }
 .wrapper {
 	overflow: clip;
@@ -29,7 +29,10 @@ img{
 	font-size: 12px;
 	line-height: 25px;
 	color: rgba(73, 80, 87, 0.5);
-	position: fixed;
+	position: fixed;  
+	top: 0;  
+	z-index: 100;  
+
 }
 .header__logotype{
 	position: relative;
@@ -40,6 +43,18 @@ img{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 37px 0px;
+}
+.header__link:not(:last-child){
+	margin-right: 25px;
+}
+.header__sub-link{
+	display: flex;
+}
+.header__socail{
+	margin-right: 40px;
+}
+.header__search{
+	margin-top: 5px;
 }
 .list {
 	display: flex;
@@ -61,9 +76,6 @@ img{
 	display: block;
 	border: 2px solid #DDBEA9;
 	border-radius: 2px;
-}
-.sub-list{
-	
 }
 .sub-list__block{
 	position: absolute;
@@ -129,15 +141,16 @@ img{
 }
 
 .main{
+	margin-top: 120px;
 }
-.main__slider {
-	margin-bottom: 100px;
-}
+
 .slider {
 	width: 100%;
-	background: url('../img/photo-skills.jpg') 0px 0px/ cover no-repeat;
 	border-radius: 5px;
+	background: url('../img/photo-skills.jpg') 0px 0px/ cover no-repeat;
+	margin-bottom: 100px;
 }
+
 .slider__text{
 	padding: 192px 0px;
 }
@@ -155,6 +168,32 @@ img{
 	text-align: center;
 	color: #F8F9FA;
 }
+
+.skills {
+	width: 100%;
+	border-radius: 5px;
+	background: url('../img/tomas-edvard.jpg') 0px 0px/ cover no-repeat;
+	margin-bottom: 100px;
+}
+
+.skills__text{
+	padding: 192px 0px;
+}
+.skills__author {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #E5E5E5;
+}
+.skills__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+	color: #F8F9FA;
+}
+
 
 .main__topics {
 	display: flex;
@@ -273,6 +312,77 @@ img{
 .topics__button:hover{
 	color: #495057;
 	border-bottom: 2px solid #DDBEA9;
+}
+
+
+.main__cards {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+.cards {
+}
+.cards__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+	align-items: start;
+}
+.cards__nav-menu {
+}
+.cards__list {
+	display: flex;
+	justify-content: end;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+	color: #C4C4C4;
+	transition: all 0.7s ease 0s;
+}
+.cards__item {
+}
+.cards__item:hover{
+	color: #495057;
+}
+.cards__item:not(:last-child){
+	margin-right: 25px;
+}
+.cards__link {
+}
+
+
+.main__gallery {
+	margin-bottom: 100px;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	column-gap: 30px;
+}
+.gallery__card {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 30.333%;
+}
+.gallery__text{
+}
+.gallery__link {
+	margin-bottom: 15px;
+}
+.gallery__date {
+	margin-bottom: 30px;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	color: #495057;
+}
+.gallery__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	color: #212529;
 }
 
 .footer {
