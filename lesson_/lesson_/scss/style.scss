@@ -1,7 +1,15 @@
+@use"sass:math";
+
 @import "_reset.scss";
 @import "_common.scss";
+@import "_mixin.scss";
 
 body{
-	background: #000;
-	font-size: 16px;
+	overflow: clip;
+	min-height: 100%;
+}
+[class*="__container"]{
+	max-width: none;
+	padding: 30px 15px;
+	margin: 0px auto;
 }

@@ -1,0 +1,58 @@
+@use"sass:math";
+
+@import "_reset.scss";
+@import "_common.scss";
+@import "_mixin.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,regular,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300&display=swap);
+body{
+	overflow: clip;
+	min-height: 100%;
+}
+[class*="__container"]{
+	max-width: 1895px;
+	padding: 30px 15px;
+	margin: 0px auto;
+}
+
+.header {
+	font-family: 'Oswald';
+	&__container {
+	}
+
+	&__brands {
+	}
+}
+.brands {
+
+	&__title {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 68px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #000000;
+	}
+
+	&__row {
+		border: 2px solid #C4C4C4;
+		border-top: none ;
+		padding: 29px 8px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__link{
+		display: flex;
+		font-size: 0;
+	}
+	&__image {
+		flex: 0 1 auto;
+		padding: 55px 56px;
+		&:hover{
+			background: #F0F2F2;
+		}
+	}
+}
+

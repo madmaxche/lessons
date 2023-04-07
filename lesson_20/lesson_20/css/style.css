@@ -1,2 +1,127 @@
-@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,regular,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300&display=swap);
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.button {
+  min-width: 175px;
+  min-height: 56px;
+  border: 2px solid #000000;
+  padding: 15px 48px;
+}
+.button__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+body {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*=__container] {
+  max-width: 1895px;
+  padding: 30px 15px;
+  margin: 0px auto;
+}
+
+.header {
+  font-family: "Oswald";
+}
+.brands__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.brands__row {
+  border: 2px solid #C4C4C4;
+  border-top: none;
+  padding: 29px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.brands__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+}
+.brands__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 55px 56px;
+}
+.brands__image:hover {
+  background: #F0F2F2;
+}

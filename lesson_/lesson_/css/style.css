@@ -52,6 +52,12 @@ button {
 }
 
 body {
-  background: #000;
-  font-size: 16px;
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*=__container] {
+  max-width: none;
+  padding: 30px 15px;
+  margin: 0px auto;
 }

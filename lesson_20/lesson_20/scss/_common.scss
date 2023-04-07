@@ -1,0 +1,19 @@
+
+
+.button{
+	min-width: 175px;
+	min-height: 56px;
+	border: 2px solid #000000;
+	padding: 15px 48px;
+	&__text{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: #000000;
+	}
+}
