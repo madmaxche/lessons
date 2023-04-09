@@ -77,6 +77,10 @@ button {
   color: #000000;
 }
 
+body {
+  font-family: "Oswald";
+}
+
 .wrapper {
   overflow: hidden;
   min-height: 100%;
@@ -107,9 +111,9 @@ img {
 }
 
 .header {
-  font-family: "Oswald";
   margin-bottom: 30px;
 }
+
 .brands {
   position: relative;
 }
@@ -180,4 +184,67 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.offers .offers__body {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  gap: 30px;
+}
+.offers .offers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.offers .offers__item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1/span 2;
+}
+.offers__bg-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+.offers__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 7px;
+}
+.offers__subtitle {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 37px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 51px;
+}
+.offers_look {
+  align-self: center;
+  background: rgb(243, 240, 239);
+  justify-self: end;
+  max-width: 369px;
+  padding-right: 61px;
+  grid-row: 1;
+  grid-column: 1;
+}
+.offers_style {
+  align-se: start;
+  background: rgb(247, 224, 213);
+  justify-self: start;
+  padding-left: 61px;
+  grid-row: 2;
+  grid-column: 1;
+}
+.offers_up {
+  align-self: start;
+  background: rgb(224, 222, 211);
+  justify-self: start;
+  padding-left: 86px;
+  grid-row: 1;
+  grid-column: 1;
 }

@@ -7,6 +7,9 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,regular,500,600&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&display=swap);
 
+body{
+	font-family: "Oswald";
+}
 .wrapper{
 	overflow: hidden;
 	min-height: 100%;
@@ -27,15 +30,8 @@ img{
 	margin: 0px auto;
 }
 
-
 .header {
-	font-family: "Oswald";
 	margin-bottom: 30px;
-	&__container {
-	}
-
-	&__brands {
-	}
 }
 .brands {
 	position: relative;
@@ -89,5 +85,97 @@ img{
 	&__image {
 		justify-content: space-around;
 		align-items: center;
+		display: block;
+		object-fit: cover;
 	}
+}
+
+
+
+.main {
+
+	&__container {
+	}
+
+	&__offers {
+	}
+}
+.offers {
+
+.offers {
+
+	&__body {
+		display: grid;
+		grid-template: repeat(2,1fr) / repeat(2,1fr);
+		gap: 30px;
+	}
+
+	&__item {
+		display: flex;
+		&:nth-child(1){
+
+		}
+		&:nth-child(2){
+
+		}
+		&:nth-child(3){
+			grid-column: 2;
+			grid-row: 1/span 2;
+		}
+		}
+	}
+
+	&__bg-image {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	&__text {
+	
+	}
+
+	&__title {
+		@include title;
+		margin-bottom: 7px;
+	}
+
+	&__subtitle {
+		@include subtitle;
+		margin-bottom: 51px;
+	}
+
+	&__button {
+	}
+	&_look {
+		align-self: center;
+		background: rgba(243, 240, 239);
+		justify-self: end;
+		max-width: 369px;
+		padding-right: 61px;
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	&_style {
+		align-se: start;
+		background: rgba(247, 224, 213);
+		justify-self: start;
+		padding-left: 61px;
+		grid-row: 2;
+		grid-column: 1;
+	}
+	&_up {
+		align-self: start;
+		background: rgba(224, 222, 211);
+		justify-self: start;
+		padding-left: 86px;
+		grid-row: 1 ;
+		grid-column: 1;
+	}
+}
+.title {
+}
+.subtitle {
+}
+.button {
 }
