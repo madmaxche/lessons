@@ -259,6 +259,7 @@ img{
 	}
 
 	&__link {
+		position: relative;
 	}
 
 	&__image {
@@ -266,6 +267,7 @@ img{
 	}
 	&__text {
 		font-family: 'Oswald';
+		position: relative;
 	}
 
 	&__tag {
@@ -291,8 +293,38 @@ img{
 	}
 	&__sales {
 	}
+
+	.price {
+		&_red {
+			color: #EB5757;
+		}
+	}
 }
 
+[class*="__discount"]{
+	background: #000;
+	position: absolute;
+	top: 75px;
+	left: 190px;
+	width: 40px;
+	height: 20px;
+}
+
+[class*="__discount-tag"]{
+	background: #000;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 40px;
+	height: 20px;
+}
+[class*="__precent"]{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+}
 
 .main {
 
@@ -375,12 +407,18 @@ img{
 	}
 
 	&__item {
+		display: grid;
 	}
 
 	&__link {
+		position: relative;
 	}
-
+	&__image {
+		margin-bottom: 14px;
+	}
 	&__text {
+		align-self: end;
+		position: relative;
 	}
 
 	&__tag {
@@ -403,6 +441,28 @@ img{
 .cards {
 
 	&__image {
+		position: relative;
+	}
+}
+
+.featured {
+
+	&__discount-tag {
+		background: #000;
+		position: absolute;
+		top: 15px;
+		left: 0;
+		width: 40px;
+		height: 20px;
+	}
+
+	&__precent {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+		
+		color: #FFFFFF;
 	}
 }
 
@@ -477,8 +537,9 @@ img{
 	}
 
 	&__item {
-		display: grid;
-		grid-auto-flow: column;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		background: #FFFFFF;
 		padding: 24px;
 		&:not(:last-child) {
@@ -488,7 +549,6 @@ img{
 
 	&__tag {
 		align-self: start;
-		grid-row: 1;
 		font-weight: 600;
 		font-size: 18px;
 		line-height: 27px;
@@ -505,7 +565,6 @@ img{
 		margin-bottom: 32px;
 	}
 	&__description {
-		grid-row: 3;
 		font-family: "Roboto";
 		font-size: 16px;
 		line-height: 24px;
@@ -515,8 +574,6 @@ img{
 	}
 
 	&__date {
-		grid-row: 4;
-		align-self: end;
 		font-weight: 300;
 		font-size: 13px;
 		line-height: 37px;

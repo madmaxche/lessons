@@ -387,11 +387,15 @@ img {
           column-gap: 26px;
   row-gap: 46px;
 }
+.cards__link {
+  position: relative;
+}
 .cards__image {
   margin-bottom: 14px;
 }
 .cards__text {
   font-family: "Oswald";
+  position: relative;
 }
 .cards__tag {
   margin-bottom: 5px;
@@ -413,6 +417,36 @@ img {
   margin: 63px auto;
   color: #828282;
 }
+.cards .price_red {
+  color: #EB5757;
+}
+
+[class*=__discount] {
+  background: #000;
+  position: absolute;
+  top: 75px;
+  left: 190px;
+  width: 40px;
+  height: 20px;
+}
+
+[class*=__discount-tag] {
+  background: #000;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+}
+
+[class*=__precent] {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .limits {
   background: url("/img/offers/offers-limits.webp") 0 0/cover no-repeat;
   width: 100%;
@@ -475,6 +509,20 @@ img {
      -moz-column-gap: 27px;
           column-gap: 27px;
 }
+.featured__item {
+  display: grid;
+}
+.featured__link {
+  position: relative;
+}
+.featured__image {
+  margin-bottom: 14px;
+}
+.featured__text {
+  -ms-flex-item-align: end;
+      align-self: end;
+  position: relative;
+}
 .featured__description {
   margin-bottom: 20px;
   font-weight: 300;
@@ -482,6 +530,26 @@ img {
   line-height: 27px;
   color: #000000;
 }
+.cards__image {
+  position: relative;
+}
+
+.featured__discount-tag {
+  background: #000;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+}
+.featured__precent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .explore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,8 +596,16 @@ img {
   gap: 30px;
 }
 .footer__item {
-  display: grid;
-  grid-auto-flow: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #FFFFFF;
   padding: 24px;
 }
@@ -537,8 +613,8 @@ img {
   margin-right: 30px;
 }
 .footer__tag {
-  align-self: start;
-  grid-row: 1;
+  -ms-flex-item-align: start;
+      align-self: start;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
@@ -555,7 +631,6 @@ img {
   margin-bottom: 32px;
 }
 .footer__description {
-  grid-row: 3;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 24px;
@@ -564,8 +639,6 @@ img {
   margin-bottom: 99px;
 }
 .footer__date {
-  grid-row: 4;
-  align-self: end;
   font-weight: 300;
   font-size: 13px;
   line-height: 37px;
