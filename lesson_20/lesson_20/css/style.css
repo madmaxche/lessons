@@ -305,6 +305,7 @@ img {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  margin-bottom: 63px;
 }
 @media (max-width: 980px) {
   .shop {
@@ -401,6 +402,9 @@ img {
   color: #000;
 }
 
+.shop__cards {
+  margin-bottom: 63px;
+}
 .cards {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
@@ -495,4 +499,25 @@ img {
   height: 20px;
   background: #000;
   text-align: center;
+}
+
+.shop__button {
+  grid-column: 2/span2;
+  min-width: 140px;
+  min-height: 50.33px;
+  margin: 0px auto;
+  border: 1px solid #828282;
+}
+@media (max-width: 980px) {
+  .shop__button {
+    grid-column: 1;
+  }
+}
+.shop__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #828282;
 }

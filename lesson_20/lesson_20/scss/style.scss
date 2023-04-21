@@ -191,6 +191,7 @@ img{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	column-gap: 30px;
+	margin-bottom: 63px;
 	@media (max-width: 980px){
 		grid-template-columns: repeat(1,1fr);
 		row-gap: 30px;
@@ -282,7 +283,7 @@ img{
 .shop {
 
 	&__cards {
-		
+		margin-bottom: 63px;
 	}
 
 	&__card {
@@ -379,4 +380,28 @@ img{
 		background: #000;
 		text-align: center;
 	}
+}
+.shop {
+
+	&__button {
+		grid-column: 2/span2;
+		min-width: 140px;
+		min-height: 50.33px;
+		margin: 0px auto;
+		border: 1px solid #828282;
+		@media (max-width: 980px){
+			grid-column: 1;
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: #828282;
+	}
+}
+.button {
 }
