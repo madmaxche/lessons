@@ -403,5 +403,45 @@ img{
 		color: #828282;
 	}
 }
+
+
+.main {
+
+	&__limits {
+	}
+}
+.limits {
+	background: url('/img/offers/offers-limits.webp') 0 0/cover no-repeat;
+	display: flex;
+	padding: 70px 0px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	&__text {
+		max-width: 639px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 56px;
+		line-height: 72px;
+		text-transform: uppercase;
+		color: #000000;
+	}
+
+	&__description {
+		font-family: 'Roboto';
+		font-size: 25px;
+		line-height: 37px;
+		letter-spacing: 0.01em;
+		color: #000000;
+	}
+
+	&__button {
+	}
+}
 .button {
+
+	&__text {
+	}
 }
