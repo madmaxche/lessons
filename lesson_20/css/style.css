@@ -477,10 +477,20 @@ img {
 }
 .cards__link {
   position: relative;
-}
-.cards__image {
+  display: block;
+  max-width: 354px;
+  overflow: hidden;
   margin-bottom: 14px;
 }
+.cards__image {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.cards__image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 .cards__sales {
   position: absolute;
   top: 15px;
