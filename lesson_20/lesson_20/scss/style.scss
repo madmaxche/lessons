@@ -10,7 +10,7 @@
 body{
 	font-family: "Oswald";
 	font-weight: 400;
-	line-height: 1,5;
+	line-height: 1.5;
 }
 .wrapper{
 	overflow: hidden;
@@ -57,7 +57,7 @@ img{
 		border: 2px solid #C4C4C4;
 		display: flex;
 		justify-content: space-evenly;
-		align-items: space-evenly;
+		align-content: space-evenly;
 		row-gap: 35px;
 		@media (max-width: 1362px){
 			flex-wrap: wrap;
@@ -81,7 +81,7 @@ img{
 	margin-bottom: 30px;
 	&__cards {
 		display: grid;
-		grid-template: repeat(2,1fr/ repeat(2,1fr));
+		grid-template: repeat(2,1fr)/repeat(2,1fr);
 		gap: 30px;
 		@media (max-width: 1470px){
 			grid-template: repeat(3,1fr)/repeat(1,1fr);
@@ -92,13 +92,13 @@ img{
 		display: flex;
 		align-items: center;
 		&:nth-child(1){
-			background: url('/img/offers/offers-look.jpg') 0 0/cover no-repeat;
+			background: url('../img/offers/offers-look.jpg') 0 0/cover no-repeat;
 			grid-row: 1;
 			grid-column: 1;
 			justify-content: end;
 		}
 		&:nth-child(2){
-			background: url('/img/offers/offers-up.jpg') center center/cover  no-repeat;
+			background: url('../img/offers/offers-up.jpg') center center/cover  no-repeat;
 			grid-row: 1/span 2;
 			grid-column: 2;
 			justify-content: start;
@@ -110,7 +110,7 @@ img{
 			}
 		}
 		&:nth-child(3){
-			background: url('/img/offers/offers-style.jpg') 0 0/cover  no-repeat;
+			background: url('../img/offers/offers-style.jpg') 0 0/cover  no-repeat;
 			grid-row: 2;
 			grid-column: 1;
 			justify-content: start;
@@ -220,7 +220,7 @@ img{
 		}
 	}
 	.category__input:checked+ .category__label::before{
-		background: url('/img/icons/checkbox-arrow.svg') center no-repeat;
+		background: url('../img/icons/checkbox-arrow.svg') center no-repeat;
 		color: #000;
 	}
 	.category__input:checked+ .category__label{
@@ -330,12 +330,12 @@ img{
 }
 
 .limits {
-	background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 43.27%, rgba(255, 255, 255, 0) 100%),url('/img/offers/offers-limits.webp') right center /cover no-repeat;
+	background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 43.27%, rgba(255, 255, 255, 0) 100%),url('../img/offers/offers-limits.webp') right center /cover no-repeat;
 	padding: 78px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	align-items: space-around;
+	align-content: space-around;
 	margin-bottom: 67px;
 	&__text {
 		max-width: 639px;
