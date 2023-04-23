@@ -291,7 +291,7 @@ img {
           align-items: center;
 }
 .offers__card:nth-child(1) {
-  background: url("../img/offers/offers-look.jpg") 0 0/cover no-repeat;
+  background: url("img/shop/shop-clothes-4.webp") 0 0/cover no-repeat;
   grid-row: 1;
   grid-column: 1;
   -webkit-box-pack: end;
