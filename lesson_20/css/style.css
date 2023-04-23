@@ -291,7 +291,7 @@ img {
           align-items: center;
 }
 .offers__card:nth-child(1) {
-  background: url("../../img/shop/shop-clothes-4.webp") 0 0/cover no-repeat;
+  background: url("../../img/offers/offers-look.jpg") 0 0/cover no-repeat;
   grid-row: 1;
   grid-column: 1;
   -webkit-box-pack: end;
@@ -453,7 +453,7 @@ img {
   margin-right: 9px;
 }
 .category .category__input:checked + .category__label::before {
-  background: url("/img/icons/checkbox-arrow.svg") center no-repeat;
+  background: url("../../img/icons/checkbox-arrow.svg") center no-repeat;
   color: #000;
 }
 .category .category__input:checked + .category__label {
@@ -568,8 +568,8 @@ img {
 
 .limits {
   background: -webkit-gradient(linear, left top, right top, from(#DDEBF1), color-stop(42.71%, #D3E5EE), color-stop(43.27%, #C8DEEC), to(rgba(255, 255, 255, 0))), url("/img/offers/offers-limits.webp") right center/cover no-repeat;
-  background: -o-linear-gradient(left, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 43.27%, rgba(255, 255, 255, 0) 100%), url("img/offers/offers-limits.webp") right center/cover no-repeat;
-  background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 43.27%, rgba(255, 255, 255, 0) 100%), url("img/offers/offers-limits.webp") right center/cover no-repeat;
+  background: -o-linear-gradient(left, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 43.27%, rgba(255, 255, 255, 0) 100%), url("../../img/offers/offers-limits.webp") right center/cover no-repeat;
+  background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 43.27%, rgba(255, 255, 255, 0) 100%), url("../../img/offers/offers-limits.webp") right center/cover no-repeat;
   padding: 78px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
