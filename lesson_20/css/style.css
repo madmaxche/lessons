@@ -183,7 +183,7 @@ button {
 body {
   font-family: "Oswald";
   font-weight: 400;
-  line-height: 1, 5;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -245,7 +245,7 @@ img {
           justify-content: space-evenly;
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
-          align-items: space-evenly;
+          align-content: space-evenly;
   row-gap: 35px;
 }
 @media (max-width: 1362px) {
@@ -273,7 +273,7 @@ img {
 }
 .offers__cards {
   display: grid;
-  grid-template: repeat(2, 1fr/repeat(2, 1fr));
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr));
   gap: 30px;
 }
 @media (max-width: 1470px) {
@@ -583,7 +583,7 @@ img {
           justify-content: space-evenly;
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
-          align-items: space-around;
+          align-content: space-around;
   margin-bottom: 67px;
 }
 .limits__text {
