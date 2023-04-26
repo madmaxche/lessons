@@ -477,9 +477,20 @@ img {
 }
 .cards__link {
   position: relative;
+  display: block;
+  max-width: 354px;
+  overflow: hidden;
+  margin-bottom: 14px;
 }
 .cards__image {
-  margin-bottom: 14px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.cards__image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .cards__sales {
   position: absolute;
@@ -641,6 +652,20 @@ img {
 }
 .slider__link {
   position: relative;
+  display: block;
+  max-width: 354px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.slider__image {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.slider__image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .slider__icon {
   -webkit-transform: translate(14px, 12px);

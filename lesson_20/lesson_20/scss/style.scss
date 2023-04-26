@@ -242,10 +242,17 @@ img{
 
 	&__link {
 		position: relative;
+		display: block;
+		max-width: 354px;
+      overflow: hidden;
+		margin-bottom: 14px;
 	}
 
 	&__image {
-		margin-bottom: 14px;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			transform:scale(1.1);
+		}
 	}
 
 	&__sales {
@@ -388,6 +395,17 @@ img{
 	}
 	&__link {
 		position: relative;
+		display: block;
+		max-width: 354px;
+      overflow: hidden;
+		margin-bottom: 14px;
+	}
+
+	&__image {
+		transition: all 0.3s ease 0s;
+		&:hover{
+			transform:scale(1.1);
+		}
 	}
 
 	&__icon {
