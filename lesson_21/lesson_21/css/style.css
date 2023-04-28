@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
 *,
 *::before,
 *::after {
@@ -52,6 +53,7 @@ button {
 }
 
 body {
+  font-family: "Poppins";
   overflow: clip;
   min-height: 100%;
 }
@@ -60,4 +62,42 @@ body {
   max-width: 1270px;
   padding: 30px 15px;
   margin: 0px auto;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("../img/header/header-back.jpg") 0 0/cover no-repeat;
+}
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__image {
+  display: inline-block;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  color: #F8F9FA;
+}
+.menu__item {
+  display: inline-block;
+}
+.menu__item:not(:last-child) {
+  margin-right: 25px;
+}
+.sub-menu {
+  visibility: hidden;
+  display: none;
 }

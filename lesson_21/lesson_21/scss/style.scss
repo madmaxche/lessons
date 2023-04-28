@@ -4,7 +4,10 @@
 @import "_common.scss";
 @import "_mixin.scss";
 
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
 body{
+	font-family: "Poppins";
 	overflow: clip;
 	min-height: 100%;
 }
@@ -12,4 +15,65 @@ body{
 	max-width: 1270px;
 	padding: 30px 15px;
 	margin: 0px auto;
+}
+
+
+.header {
+	min-height: 100vh;
+	background: url('../img/header/header-back.jpg') 0 0/cover no-repeat;
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__icon {
+	}
+
+	&__image {
+		display: inline-block;
+	}
+
+	&__block {
+	}
+
+	&__menu {
+		display: flex;
+		
+	}
+}
+.menu {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+	color: #F8F9FA;
+	&__list {
+	}
+
+	&__item {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+	}
+
+	&__link {
+	}
+
+	&__sub-menu {
+	}
+}
+.sub-menu {
+	visibility: hidden;
+	display: none;
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
 }
