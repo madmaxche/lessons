@@ -347,7 +347,7 @@ img {
   line-height: 40px;
   color: #212529;
 }
-.cards__description {
-  padding-bottom: 0.9375rem;
-  border-bottom: 2px solid #E5E5E5;
+.cards__author {
+  border-top: 2px solid #E5E5E5;
+  padding-top: 0.9375rem;
 }

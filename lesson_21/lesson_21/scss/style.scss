@@ -303,7 +303,7 @@ img{
 	&__text {
 		display: flex;
 		flex-direction: column;
-		row-gap:rem(15);
+		row-gap: rem(15);
 	}
 	&__date {
 	}
@@ -316,12 +316,10 @@ img{
 	}
 
 	&__description {
-		padding-bottom: rem(15);
-		border-bottom: 2px solid #E5E5E5;
-
 	}
 
 	&__author {
-
+		border-top: 2px solid #E5E5E5;
+		padding-top: rem(15);
 	}
 }
