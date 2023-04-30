@@ -55,6 +55,10 @@ button {
 body {
   font-family: "Poppins";
   min-height: 100%;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  color: #495057;
 }
 
 [class*=__container] {
@@ -168,9 +172,6 @@ img {
   padding-top: 25vmax;
   padding-bottom: 6.25rem;
   max-width: 37.8125rem;
-  font-weight: 300;
-  font-size: 0.75rem;
-  line-height: 1.66;
   color: #E5E5E5;
 }
 .header__title {
@@ -200,7 +201,6 @@ img {
 .menu__item {
   position: relative;
   font-weight: 500;
-  font-size: 0.75rem;
   line-height: 2.08;
   color: rgba(248, 249, 250, 0.5);
   -webkit-transition: all 0.5s ease 0s;
@@ -268,12 +268,6 @@ img {
   }
 }
 
-.categories {
-  font-weight: 300;
-  font-size: 0.75rem;
-  line-height: 1.66;
-  color: #495057;
-}
 .categories__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,9 +278,6 @@ img {
   margin-bottom: 2.75rem;
   font-weight: 500;
   line-height: 2.08;
-}
-.categories__title {
-  color: #495057;
 }
 .categories__column {
   color: rgba(73, 80, 87, 0.5);
@@ -445,9 +436,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 0.9375rem;
-  font-weight: 300;
-  font-size: 0.75rem;
-  line-height: 1.66;
   color: #E5E5E5;
 }
 .topics__subtitle {
@@ -489,8 +477,6 @@ img {
 }
 .trip__subtitle {
   max-width: 24.5625rem;
-  font-weight: 300;
-  font-size: 0.75rem;
   line-height: 1.25;
   color: #E5E5E5;
 }
@@ -527,9 +513,6 @@ img {
      -moz-column-gap: 1.875rem;
           column-gap: 1.875rem;
   row-gap: 3.125rem;
-  font-weight: 300;
-  font-size: 0.75rem;
-  line-height: 1.66;
   color: #495057;
 }
 .side__item {
@@ -559,7 +542,6 @@ img {
 }
 .footer__row {
   font-weight: 500;
-  font-size: 0.75rem;
   line-height: 2.08;
   color: rgba(248, 249, 250, 0.5);
   display: -webkit-box;
@@ -596,4 +578,12 @@ img {
   -webkit-column-gap: 1.5625rem;
      -moz-column-gap: 1.5625rem;
           column-gap: 1.5625rem;
+}
+.footer__link {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.footer__link:hover {
+  color: #F8F9FA;
 }
