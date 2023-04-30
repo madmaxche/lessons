@@ -323,3 +323,129 @@ img{
 		padding-top: rem(15);
 	}
 }
+
+
+
+
+.main {
+
+	&__topics {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		@media (max-width: em(987)){
+			grid-template-columns: repeat(1,1fr);
+		}
+	}
+
+	&__container {
+	}
+}
+.topics {
+	background-color: #212529;
+	@media (max-width: em(987)){
+		grid-template-columns: repeat(1,1fr);
+		background:  url('../img/topics/topics-back.jpg') 0 0/100% 100% no-repeat;
+	}
+	&__columns {
+
+	}
+
+	&__cards {
+		padding: rem(100) 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(40);
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 20px;
+		color: #F8F9FA;
+	}
+
+	&__item {
+		display: flex;
+		column-gap: rem(40);
+		@media (max-width: em(987)){
+			background: #21252972;
+			padding: rem(10);
+		}
+		@media (max-width: em(512)){
+			flex-wrap: wrap;
+			justify-content:center;align-items: center;
+			row-gap: rem(15);
+		}
+	}
+
+	&__img {
+	}
+
+	&__link {
+		overflow: hidden;
+		display: inline-block;
+	}
+
+	&__image {
+		border-radius: 4px;
+		transition: all 0.5s ease 0s;
+		&:hover{
+			transform:scale(1.2);
+			opacity: 0.8;
+		}
+	}
+
+	&__text {
+		max-width:rem(287);
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(15);
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 20px;
+		color: #E5E5E5;
+	}
+
+	&__date {
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 25px;
+		color: #F8F9FA;
+	}
+
+	&__description {
+	}
+
+	&__trip {
+	}
+}
+.trip {
+	background:  url('../img/topics/topics-back.jpg') 0 0/100% 100% no-repeat;
+	@media (max-width: em(987)){
+		background: none;
+		padding-bottom: rem(100);
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	&__title {
+		max-width: 393px;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 40px;
+		color: #F8F9FA;
+	}
+
+	&__subtitle {
+		max-width: 393px;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 20px;
+		color: #E5E5E5;
+	}
+}
