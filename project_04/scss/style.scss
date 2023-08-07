@@ -1,0 +1,223 @@
+@use"sass:math";
+
+@import "_reset.scss";
+@import "_common.scss";
+@import "_mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Oi:regular);
+@import url(https://fonts.googleapis.com/css?family=Handjet:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+
+.wrapper{
+	min-height: 100%;
+overflow: hidden;
+}
+body{
+	font-family: 'Oswald';
+}
+
+[class*="__container"]{
+	max-width: 1270px;
+	padding: 0px 30px;
+	margin: 0px auto;
+}
+
+.header {
+	position: fixed;
+	height: 15s0px;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 5px 15px 0px rgba(241,15,208,0.54);
+	background:#fff;
+	&__container {
+	}
+
+	&__row {
+		padding: 40px 25px;
+		max-height: 150px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__logotype {
+		max-width: 200px;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			scale: 1.3;
+		}
+	}
+
+	&__menu {
+	}
+}
+.menu {
+	font-family: 'Handjet';
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		@media (max-width: em(1233)){
+			visibility: hidden;
+			display: none;
+		}
+	}
+
+	&__item {
+		padding: 10px;
+		transition: all 0.3s ease 0s;
+		
+		&:hover{
+			transform: scale(1.2);
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+		color: #ba07ae;
+		font-size: 30px;
+		font-weight: 700;
+		transition: all 0.3s ease 0s;
+		letter-spacing: 4px;
+		&:hover{
+			border-bottom: 4px solid #000000;
+			color: #351b40;
+		}
+	}
+}
+
+
+.main {
+	margin-top: 200px;
+	&__container {
+	}
+
+	&__services {
+	}
+}
+.services {
+	&__text{
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: em(650)){
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__title {
+		display: flex;
+		text-transform: uppercase;
+		align-items: center;
+		font-size: 45px;
+		margin-bottom: 35px;
+		font-weight: 900;
+		color: #f10fd0;
+	}
+
+	&__subtitle {
+		text-align: center;
+		text-transform: uppercase;
+		background:#f10fd0;
+		padding: 15px 5px;
+		color: #fff;
+		max-width: 360px;
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 20px;
+		span{
+			color: #f10fd0;
+			font-size: 16px;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
+	&__cards {
+	}
+}
+.cards {
+	max-width: 900px;
+	margin: 0px auto;
+	display: flex;
+	gap: 40px;
+	flex-wrap: wrap;
+	&__items {
+		max-width: 350px;
+		margin: 0px auto;
+		text-align: center;
+		overflow: hidden;
+		padding-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	&__img {
+		max-width: 200px;
+		margin-bottom: 15px;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			transform: scale(1.1);
+			opacity: 0.8;
+		}
+	}
+
+	&__title {
+		color: #f10fd0;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__description {
+		max-width: 250px;
+		margin-bottom: 10px;
+		font-weight: 500;
+	}
+
+	&__button {
+		display: inline-block;
+		min-width: 140px;
+		padding: 10px 10px;
+		background: #f10fd0;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			transform: scale(1.2);
+			background: #6b085c;
+		}
+	}
+
+	&__link {
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 18px;
+		display: inline-block;
+		color: #fff;
+		padding: 2px;
+		&:hover{
+			
+		}
+	}
+}
+
+.body__contacts{
+	height: 100vh;
+	background: url('/img/tanya/tanya-3.png') 0 0 repeat;
+}
+
+.zamovlenya {
+	&__text {
+		margin: 25%;
+		align-items: center;
+		display: inline-block;
+		padding: 20px 10px;
+		font-size: 55px;
+		color: #fff;
+		background: #f10fd0;
+		text-align: center;
+	}
+}
